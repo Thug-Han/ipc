@@ -45,4 +45,5 @@ dependencies {
 
     implementation dps.arouter_api
     annotationProcessor dps.arouter_compiler
+    implementation dps.utilcodex
 }
