@@ -1,4 +1,4 @@
-package com.thughan.ipc.aidl;
+package com.thughan.ipc.aidl.common;
 
 import android.app.Service;
 import android.content.Intent;
@@ -7,7 +7,6 @@ import android.os.RemoteException;
 
 import com.blankj.utilcode.util.LogUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 

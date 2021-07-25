@@ -1,4 +1,4 @@
-package com.thughan.ipc.aidl;
+package com.thughan.ipc.aidl.common;
 
 import android.os.Parcel;
 import android.os.Parcelable;

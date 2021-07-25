@@ -3,7 +3,7 @@
     package="com.thughan.ipc">
 
     <application>
-        <activity android:name=".aidl.AidlActivity">
+        <activity android:name=".aidl.common.AidlActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -12,7 +12,7 @@
         </activity>
 
         <service
-            android:name=".aidl.AidlService"
+            android:name=".aidl.common.AidlService"
             android:enabled="true"
             android:exported="true"
             android:process=":remote" />

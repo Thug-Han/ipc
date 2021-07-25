@@ -1,7 +1,7 @@
 // IBookManager.com.thughan.ipc.aidl
-package com.thughan.ipc.aidl;
+package com.thughan.ipc.aidl.common;
 
-import com.thughan.ipc.aidl.Book;
+import com.thughan.ipc.aidl.common.Book;
 
 // Declare any non-default types here with import statements
 
