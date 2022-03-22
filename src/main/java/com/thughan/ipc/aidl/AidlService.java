@@ -1,4 +1,4 @@
-package com.thughan.ipc.aidl.common;
+package com.thughan.ipc.aidl;
 
 import android.app.Service;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.IBinder;
 import android.os.RemoteException;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.thughan.ipc.aidl.common.Book;
+import com.thughan.ipc.aidl.custom.IBookManager;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -57,7 +59,7 @@ public class AidlService extends Service {
         }
 
         @Override
-        public void addBookInOut(Book book) throws RemoteException {
+        public void addBook(Book book) throws RemoteException {
             if (book != null) {
                 mBookList.add(book);
                 LogUtils.i(TAG, "接收到了一个正常对象");

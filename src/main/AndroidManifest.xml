@@ -3,12 +3,16 @@
     package="com.thughan.ipc">
 
     <application>
-        <activity android:name=".aidl.common.AidlActivity">
+        <activity android:name=".aidl.AidlActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <service
-            android:name=".aidl.common.AidlService"
+            android:name=".aidl.AidlService"
             android:enabled="true"
             android:exported="true"
             android:process=":remote" />

@@ -1,4 +1,4 @@
-package com.thughan.ipc.aidl.common;
+package com.thughan.ipc.aidl;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.thughan.ipc.R;
+import com.thughan.ipc.aidl.common.Book;
+import com.thughan.ipc.aidl.custom.IBookManager;
 
 import java.util.List;
 
@@ -62,7 +64,7 @@ public class AidlActivity extends AppCompatActivity implements View.OnClickListe
         int id = v.getId();
         if (id == R.id.button_add){
             try {
-                mBookManager.addBookInOut(new Book(9,"buy a new book kotlin 89元"));
+                mBookManager.addBook(new Book(9,"buy a new book kotlin 89元"));
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
