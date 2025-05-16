@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.thughan.ipc">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application>
-        <activity android:name=".aidl.AidlActivity">
+        <activity android:name="com.thughan.ipc.aidl.AidlActivity">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
@@ -12,7 +11,7 @@
         </activity>
 
         <service
-            android:name=".aidl.AidlService"
+            android:name="com.thughan.ipc.aidl.AidlService"
             android:enabled="true"
             android:exported="true"
             android:process=":remote" />
